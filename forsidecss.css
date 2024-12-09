@@ -1,6 +1,7 @@
 /* */
 body,
 html {
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -143,7 +144,7 @@ button:hover {
     align-items: center;
 }
 
-.aboutme {
+#aboutme {
     padding: 10vh 0vh 10vh 0vh;
     background-color: black;
 }
@@ -271,6 +272,14 @@ button:hover {
     /* Standard syntax */
     text-align: center;
     flex: 10%;
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#cases__container__nav:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+    cursor: pointer;
+    color: #3772FF;;
 }
 
 #cases__container__slider {
@@ -299,10 +308,16 @@ button:hover {
     bottom: 0;
     right: 0;
     left: 0;
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#cases__container__slider img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .imageactive {
-    animation: active .3s 1;
+    animation: active 1s 1;
     display: block;
 }
 
@@ -313,10 +328,12 @@ button:hover {
 
 @keyframes active {
     from {
+        transform: scale(0);
         opacity: 0;
     }
 
     to {
+        transform: scale(1);
         opacity: 1;
     }
 }
@@ -341,7 +358,7 @@ button:hover {
     grid-area: knap;
 }
 
-.contact {
+#contact {
     background-color: #3772FF;
     width: 100%;
 }
@@ -352,7 +369,7 @@ button:hover {
     padding: 15vh 0vh 15vh 0vh;
 }
 
-.contact h2 {
+#contact h2 {
     margin-bottom: 8vh;
     color: white;
 }
