@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="sliderscript.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside - JaxDesign </title>
+
+    <!-- Stylesheet -->
+    <link href="forsidecss.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Stalinist+One&family=Tektur:wght@400..900&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <!-- Google Fonts -->
+</head>
+
+<body>
+    <header>
+        <img src="input-imgs/JAKOB-WHITE.svg">
+        <nav><a href="#">Forside</a><a href="#">Om</a><a href="#">Portfolio</a><button>Kontakt</button></nav>
+    </header>
+
+    <div class="herosection">
+        <div class="herosection__container">
+            <div class="herosection__container__textbox">
+                <h1>PORT<br>FOLIO</h1>
+                <p>Velkommen til min kreative verden, hvor du kan lære mere og mig og se hvad jeg kan tilbyde dig eller
+                    dit erhverv.</p>
+                <button style="background: linear-gradient(45deg, rgba(55,114,255,1) 35%, rgb(30, 61, 139) 100%);">LÆS
+                    MERE</button>
+            </div>
+
+            <div class="herosection__container__imagebox">
+                <img src="input-imgs/megif_1.gif">
+            </div>
+        </div>
+    </div>
+
+    <div id="cases">
+        <h2><b>Cases</b> jeg er stolt af</h2>
+        <div id="cases__container">
+            <div id="cases__container__nav"><a onclick="sliderremove()">
+                    < TILBAGE</a> </div> <div id="cases__container__slider">
+                        <img src="https://images.unsplash.com/photo-1719937051157-d3d81cc28e86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+                            id="imageone">
+                        <img src="https://images.unsplash.com/photo-1733425999473-8a2ac086ec5b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
+                            id="imagetwo">
+                        <img src="https://images.unsplash.com/photo-1733428450578-b497f84ee54b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
+                            id="imagethree">
+                        <img src="CREATIVEMEE.png" id="imagefour">
+                        <img src="video-capture-0.00seg-150.png" id="imagefive">
+                        <img src="https://images.unsplash.com/photo-1733077151496-5e2701fc64eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+                            id="imagesix">
+            </div>
+            <div id="cases__container__nav"><a onclick="slideradd()">NÆSTE ></a></div>
+        </div>
+        <div id="cases_sliderbutton">
+            <a id="sliderbuttonone"></a>
+            <a id="sliderbuttontwo"></a>
+            <a id="sliderbuttonthree"></a>
+            <a id="sliderbuttonfour"></a>
+            <a id="sliderbuttonfive"></a>
+            <a id="sliderbuttonsix"></a>
+        </div>
+    </div>
+
+    <div class="aboutme">
+        <div class="aboutme__container">
+            <div class="aboutme__container__textbox">
+                <h2>Hej!<br> Mit navn er Jakob Andreasen</h2>
+                <p>Jeg er en ung fyr på 24 år, bosat i Odense.
+                    <br><br>
+                    Tidligere uddannet mediegrafiker, ønsker jeg at bygge mere på min uddannelse og tilføje mere
+                    erfaring til mit navn. Grafisk design er noget jeg har brændt for, siden jeg gik i 8. klasse og
+                    drømmer stadig utrolig meget om at blive ansat i en grafisk afdeling i fremtiden.
+                    <br><br>
+                    Jeg har altid været lidt en nørd, jeg har altid været glad for computere men har også haft et behov
+                    for at udtrykke mig kreativt, det er derfor jeg elsker grafisk design utrolig meget fordi det er en
+                    kombination af begge ting.</p>
+            </div>
+            <div class="aboutme__container__imagebox"></div>
+        </div>
+    </div>
+
+
+    <div class="services">
+        <div class="services__container">
+            <p>Jeg tilbyder følgende...</p>
+            <h2>GRAFISK DESIGN. <p>Grafisk desgin er jo mega</p>
+            </h2>
+            <h2>Branding og Identitet.<p>Grafisk desgin er jo mega</p>
+            </h2>
+            <h2>VISUAL KOMMUNIKATION.<p>Grafisk desgin er jo mega</p>
+            </h2>
+        </div>
+    </div>
+
+
+    <div class="contact">
+        <div class="contact__container">
+            <h2>ønsker du at <br> arbejde sammen?</h2>
+            <form action="">
+                <ul><input placeholder="Fornavn" id="FormFornavn"><input placeholder="Telefon" id="FormTelefon"><input
+                        placeholder="Email" id="FormEmail"><input placeholder="Besked" id="FormBesked"><button
+                        id="FormKnap" style="background: #FF57BB;">Send</button></ul>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="footer__container">
+            <nav><b>Sider</b><a href="#">Forside</a><a href="#">Om</a><a href="#">Portfolio</a><a href="#">Kontakt</a>
+            </nav>
+            <nav><b>Kontakt</b><a href="#">+45 2311 8050</a><a href="#">jakobandreasen1@gmail.com</a></nav>
+        </div>
+        <img src="input-imgs/JAKOB-WHITE.svg">
+    </footer>
+
+</body>
+
+</html>

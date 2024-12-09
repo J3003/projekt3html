@@ -1,0 +1,570 @@
+/* */
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+* {border: 1px dotted red;}
+
+img,
+svg {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+h1 {
+    font-family: "Stalinist One", serif;
+    font-size: 100px;
+    line-height: 100px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Tektur", sans-serif;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 57px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+
+header {
+    width: 100%;
+    height: 5vh;
+    padding: 2vh;
+    background-color: hsl(191, 65%, 3%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-basis: 40%;
+}
+
+header nav a {
+    transition: .5s;
+    text-decoration: none;
+    color: white;
+    font-family: "Unbounded", sans-serif;
+}
+
+header nav a:hover {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/* Specifikt hero buttons */
+header button {
+    font-family: "Unbounded", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 1vh;
+    padding: 1.5vh 6vh 1.5vh 6vh;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+}
+
+header button:hover {
+    border: 0px solid black;
+    background-color: #3772FF;
+}
+
+
+/* Ellers skal alle andre buttons se sådan her ud!!!*/
+button {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 1vh;
+    padding: 1.5vh 8vh 1.5vh 8vh;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:hover {
+    transform: scale(1.1);
+    filter: brightness(110%);
+    text-decoration: underline;
+}
+
+.herosection {
+    background-color: #051113;
+}
+
+
+.herosection__container {
+    margin: auto;
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.herosection__container__textbox {
+    flex: 1;
+    color: white;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-right: 5vh;
+}
+
+.herosection__container__textbox p {
+    margin-right: 5vh;
+    margin-bottom: 5vh;
+}
+
+.herosection__container__imagebox {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.aboutme {
+    padding: 10vh 0vh 10vh 0vh;
+    background-color: black;
+}
+
+.aboutme__container {
+    overflow: hidden;
+    color: white;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.aboutme__container__imagebox {
+    height: 60svh;
+    margin: auto 2vh;
+    background: url(input-imgs/CREATIVEMEE.png) no-repeat center;
+    background-size: cover;
+    border-radius: 2vh;
+    flex: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme__container__textbox {
+    flex: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services {
+    background-color: #ECE5F0;
+}
+
+.services__container {
+    height: 60vh;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.services__container h2 {
+    background: linear-gradient(90deg, rgba(236, 229, 240, 0) 99%, rgba(255, 87, 187, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 5vh;
+    overflow: hidden;
+    letter-spacing: 0em;
+}
+
+.services__container h2:hover {
+    background: linear-gradient(90deg, rgba(236, 229, 240, 1) 39%, rgba(255, 87, 187, 1) 100%);
+    height: 20vh;
+    letter-spacing: .05em;
+}
+
+#cases {
+    font-family: "Tektur", sans-serif;
+    background-color: #ECE5F0;
+    text-align: center;
+    padding: 8vh 0 8vh 0;
+    width: 100%;
+}
+
+#cases a {
+    font-size: 2vh;
+    font-weight: 900;
+}
+
+#cases_sliderbutton {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+}
+
+#cases_sliderbutton a {
+    opacity: .3;
+    margin: 0vh .2vh 0vh .2vh;
+    height: .8vh;
+    width: .8vh;
+    border: .4vh solid gray;
+    border-radius: 200vh;
+}
+
+.sliderbutton__active {
+    opacity: .3;
+    border: .4vh solid black !important;
+    background-color: black;
+}
+
+.sliderbutton__inactive {
+    opacity: .3;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+#cases__container {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#cases__container__nav {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+    text-align: center;
+    flex: 10%;
+}
+
+#cases__container__slider {
+    border: 1px solid gainsboro;
+    flex: 30%;
+    overflow: hidden;
+    height: 60vh;
+    width: 40vh;
+    margin: 5vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#cases__container__slider img {
+    text-align: center;
+    align-self: center;
+    height: 110%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.imageactive {
+    animation: active .3s 1;
+    display: block;
+}
+
+.imageinactive {
+    display: none;
+}
+
+
+@keyframes active {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#FormFornavn {
+    grid-area: fornavn;
+}
+
+#FormTelefon {
+    grid-area: telefon;
+}
+
+#FormEmail {
+    grid-area: email;
+}
+
+#FormBesked {
+    grid-area: besked;
+}
+
+#FormKnap {
+    grid-area: knap;
+}
+
+.contact {
+    background-color: #3772FF;
+    width: 100%;
+}
+
+.contact__container {
+    width: 70%;
+    margin: auto;
+    padding: 15vh 0vh 15vh 0vh;
+}
+
+.contact h2 {
+    margin-bottom: 8vh;
+    color: white;
+}
+
+.contact__container ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'fornavn besked''telefon besked''email besked''knap besked';
+    grid-gap: 2vh;
+}
+
+.contact__container ul form {
+    padding: 0;
+    margin: 0;
+}
+
+.contact__container ul input {
+    transition: 1s ease-in-out;
+    text-transform: uppercase;
+    outline: none;
+    border: 0px solid black;
+    border-bottom: 3px solid black;
+    overflow: hidden;
+    padding: 2vh;
+    font-family: "Space Grotesk", sans-serif;
+    border-radius: 1vh;
+}
+
+.contact__container ul input:active {
+    background-color: #3772FF;
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer__container {
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+    overflow: hidden;
+    width: 70%;
+    margin: auto;
+}
+
+footer nav {
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav b {
+    color: white;
+    font-size: 24px;
+
+}
+
+footer nav a {
+    font-size: 22px;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
+}
+
+footer img {
+    position: absolute;
+    height: 35vh;
+    bottom: -8vh;
+    right: -8vh;
+}
+
+@media only screen and (min-width: 100px) {
+    * {
+        transition: 1s ease;
+        transition-property: width;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .herosection__container {
+        width: 83%;
+    }
+
+    .aboutme__container {
+        width: 83%;
+    }
+
+    #cases__container {
+        width: 83%;
+    }
+
+    .services__container {
+        width: 83%;
+    }
+
+    .contact__container {
+        width: 83%;
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .herosection__container {
+        width: 90%;
+    }
+
+    .aboutme__container {
+        width: 90%;
+    }
+
+    #cases__container {
+        width: 90%;
+    }
+
+    .services__container {
+        width: 90%;
+    }
+
+    .contact__container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .herosection__container {
+        width: 98%;
+    }
+
+    .aboutme__container {
+        width: 98%;
+    }
+
+    #cases__container {
+        width: 98%;
+    }
+
+    .services__container {
+        width: 98%;
+    }
+
+    .contact__container {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    * {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 7vh;
+        line-height: 7vh;
+    }
+
+    h2 {
+        font-size: 4vh;
+        line-height: 4vh;
+    }
+
+    header {
+        padding: 3vh 0vh 3vh 0;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .herosection__container {
+        flex-direction: column;
+        height: 100vh;
+        width: 90%;
+    }
+
+    .herosection__container__imagebox {
+        display: none;
+    }
+
+    .herosection__container__textbox {
+        margin-right: 0 !important;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    .herosection__container__textbox * {
+        margin-right: 0 !important;
+    }
+
+    .aboutme__container {
+        flex-direction: column;
+        height: 150vh;
+        width: 90%;
+    }
+
+    .aboutme__container__imagebox {
+        margin: 0;
+        margin-top: 5vh;
+    }
+
+    .contact__container ul {
+        grid-template-areas: 'fornavn''telefon''email''besked''knap';
+    }
+
+}
